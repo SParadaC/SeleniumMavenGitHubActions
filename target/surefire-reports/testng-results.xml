@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-28T15:18:55 CST" name="TestSeleniumGitCI" finished-at="2022-03-28T15:19:08 CST" duration-ms="12337">
+    <groups>
+    </groups>
+    <test started-at="2022-03-28T15:18:55 CST" name="Command line test" finished-at="2022-03-28T15:19:08 CST" duration-ms="12337">
+      <class name="TestSeleniumGitCI">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestSeleniumGitCI@4f9a3314]" started-at="2022-03-28T15:18:55 CST" name="setUp" finished-at="2022-03-28T15:19:00 CST" duration-ms="4748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLogin()[pri:0, instance:TestSeleniumGitCI@4f9a3314]" started-at="2022-03-28T15:19:00 CST" name="userLogin" finished-at="2022-03-28T15:19:08 CST" duration-ms="7559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestSeleniumGitCI@4f9a3314]" started-at="2022-03-28T15:19:08 CST" name="tearDown" finished-at="2022-03-28T15:19:08 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestSeleniumGitCI -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestSeleniumGitCI -->
+</testng-results>
