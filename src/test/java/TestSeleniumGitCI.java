@@ -28,15 +28,6 @@ public class TestSeleniumGitCI
     }
     @Test
     public void userLogin() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        //options.addArguments("--headless");
-        driver = new ChromeDriver(options);
-        driver.navigate().to("https://www.google.com");
-        driver.manage().window().maximize();
-        Thread.sleep(120);
         WebElement searchTxt = driver.findElement(By.name("q"));
         searchTxt.sendKeys("automation" + Keys.ENTER);
         //WebElement submitBtn = driver.findElement(By.name("btnK"));
@@ -44,9 +35,7 @@ public class TestSeleniumGitCI
         System.out.println("Current URL is:" + driver.getCurrentUrl());
         Assert.assertFalse(driver.getTitle().contains("automation - Google Search"));
         System.out.println("Current Title is:" + driver.getTitle());
-        if (driver != null) {
-            driver.quit();
-        }
+
     }
     @AfterClass
     public void tearDown(){
